@@ -1,4 +1,4 @@
-# Final-Project-Heart-Failure-Prediction -- completed in Teamwork
+# Final-Project-Heart-Failure-Prediction
 ![image.png](https://veradigm.com/img/solution-clinical-data-registries.jpg)
 
 The task of this project is to analyze dataset containing different characteristics of 918 patients to predict heart failures using Python, Machine Learning and data visualization tools. Utilize the pandas data visualization tools to show the correlation between the variables and find out the factors that are most significant factors in heart failure. Utilize machine learning model to create a model to assess the likelihood of a possible heart disease event
