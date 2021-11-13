@@ -1,6 +1,6 @@
 # Final-Project-Heart-Failure-Prediction
-![image.png](heart.jpg)
-​
+![image.png](https://veradigm.com/img/solution-clinical-data-registries.jpg)
+
 The task of this project is to analyze dataset containing different characteristics of 918 patients to predict heart failures using Python, Machine Learning and data visualization tools. Utilize the pandas data visualization tools to show the correlation between the variables and find out the factors that are most significant factors in heart failure. Utilize machine learning model to create a model to assess the likelihood of a possible heart disease event
 - We made attempt to draw conculsion on basis of target variable.
 - We built a model on the target variable.
@@ -37,8 +37,6 @@ What is LVH on an ECG? Left ventricular hypertrophy (LVH), also known as an enla
 
 ![](Old_peak.png)
 
-
-
 **ST_slope** -- The ST segment shift relative to exercise-induced increments in heart rate, the ST/heart rate slope (ST/HR slope), has been proposed as a more accurate ECG criterion for diagnosing significant coronary artery disease (CAD).
 
 Morphology of ST Depression
@@ -50,10 +48,7 @@ Morphology of ST Depression
 
 ![](ST_slope_description.png)
 
-
-
 **ST-segment changes indicative of obstructive CAD** -- A treadmill ECG stress test is considered abnormal when there is a horizontal or down-sloping ST-segment depression ≥ 1 mm at 60–80 ms after the J point. Exercise ECGs with up-sloping ST-segment depressions are typically reported as an ‘equivocal’ test. In general, the occurrence of horizontal or down-sloping ST-segment depression at a lower workload (calculated in METs) or heart rate indicates a worse prognosis and higher likelihood of multi-vessel disease. The duration of ST-segment depression is also important, as prolonged recovery after peak stress is consistent with a positive treadmill ECG stress test. Another finding that is highly indicative of significant CAD is the occurrence of ST-segment elevation > 1 mm (often suggesting transmural ischaemia); these patients are frequently referred urgently for coronary angiography.
-
 
 # Process
 We utilized various models to compare the scores of each feature. This analysis is trying to find the best model that can detect if a patient will get a heart disease or not. To come up with a solutiom, we used the following models: 
@@ -62,11 +57,9 @@ Logistic regressesion models were built on each variable. The highest scores wer
 - RandomForestClassifier
 - KNN model
 - Unsupervised ML - Clustering
-
 ​
 ## Findings and Conclusion
 **The logistic regression** will be a better suited model for this dataset, because we are trying to predict whether the heart failure is going to happen or not. In addition, the features/variables in the dataset potentially highly correlated. The Logistic regression performs well on such data. 
-
 
 -55% of patients had a heart disease.
 -Men are almost 2.44 times more likely have a heart disease than women.
@@ -82,7 +75,6 @@ There is one important aspect that shows where people with MaxHR ,Cholesterol an
 St_slope:
 When studied St_slope using ML we see that 82% of the data fits the model irrespective of the scaling or unscaling.In normal type of rest ECG proves to be important for the prediction model along with the down sloping ST slope. The patient composed of these two features usually has cholesterol level between 170 to 225 mg/dl. The other types of slops with the rest ECG seems to be more spread out and less concise.
 
-
 ​
 **Unsupervised Learning Model -- Clustering** 
 We utilized one of the most famous clustering algorithms – K-Means. We implemented it from scratch and looked at its step-by-step implementation. We also looked at the elbow curve which helps to find the optimum number of clusters in the K-Means algorithm. The K-Elbow Visualizer implements the “elbow” method of selecting the optimal number of clusters for K-means clustering. K-means is a simple unsupervised machine learning algorithm that groups data into a specified number (k) of clusters. The elbow point gives the optimal number of clusters, which is within 3 to 5 here. \
@@ -91,7 +83,6 @@ We were able to use PCA and tsne to transform the data and came up with a beauti
 ![image.png](tsne_clusters.png)
 We also ran **correlation analysis** and found that the following variables were highly correlated when we did the correlation on all features: Exercise Angina, Old Peak and Chest Pain. Least correlated features were Maximum Heart and St SLope.\
 ![image.png](correlation_table.png)
-
 
 Tableau links:
 https://public.tableau.com/app/profile/ramya6056/viz/Project4_16367238004130/HeartFailurePrediction?publish=yes
